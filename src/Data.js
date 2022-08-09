@@ -44,7 +44,7 @@ export default [
         id: 3,
         title: " Mountain Meditation",
         description: "Experience the beautiful Norwegian landscape and meet new friends all while conquering rugged terrain on your mountain bike. (Bike provided!)",
-        price: 50,
+        price: 100,
         coverImg: "mountain.jpg",
         stats: {
             rating: 4.8,
