@@ -62,12 +62,18 @@ section{
     flex: 0 0 auto;         
     display: flex;          
     flex-direction: column; 
+    
 }
 
 .card-image{
     width: 100%;
     height: 300px;
     border-radius: 9px;
+    transition: 0.3s ease;
+}
+
+.card-image:hover{
+    transform: scale(1.02);
 }
 
 .card-title {
