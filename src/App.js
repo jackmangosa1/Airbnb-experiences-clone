@@ -5,22 +5,31 @@ import Stylesheet from "./Stylesheet";
 import Hero from "./conponents/Hero";
 import Card from "./conponents/Card";
 import { faSwimmer } from "@fortawesome/free-solid-svg-icons";
+import Data from "./Data";
 
 export default function App(){
+
+    const experiences = Data.map( experience =>{
+        return(
+            <Card
+            img = {experience.coverImg}
+            rating = {experience.stats.rating}
+            reviewCount = {experience.stats.reviewCount}
+            location ={experience.location}
+            title = {experience.title}
+            price = {experience.price}     
+            /> 
+        )
+    })
     return(
         <div>
             <Stylesheet/>
             <Navbar/>
             <Hero/>
-            <Card 
-            img="swim.png"
-            rating= {5.0}
-            reviewCount= "(6) •"
-            country= "USA"
-            title="Life lessons with Kathie Zaferez"
-            price="From 136$ / person"
-            
-            />
+            <section className="cards-list">
+                {experiences}
+            </section>
+           
             
         </div>
     )
