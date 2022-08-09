@@ -89,3 +89,15 @@ section{
 .card-price {
     margin-top: auto;
 }
+
+.rating{
+    margin-left: 1px;
+}
+
+.reviewCount{
+    margin-left: 5px;
+}
+
+.location{
+    margin-left: 3px;
+}
