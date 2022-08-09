@@ -17,7 +17,8 @@ export default function App(){
             reviewCount = {experience.stats.reviewCount}
             location ={experience.location}
             title = {experience.title}
-            price = {experience.price}     
+            price = {experience.price}   
+            openSpots = {experience.openSpots}  
             /> 
         )
     })
