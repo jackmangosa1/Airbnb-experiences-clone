@@ -9,16 +9,11 @@ import Data from "./Data";
 
 export default function App(){
 
-    const experiences = Data.map( experience =>{
+    const experiencesData = Data.map( experience =>{
         return(
             <Card
-            img = {experience.coverImg}
-            rating = {experience.stats.rating}
-            reviewCount = {experience.stats.reviewCount}
-            location ={experience.location}
-            title = {experience.title}
-            price = {experience.price}   
-            openSpots = {experience.openSpots}  
+                id = {experience.id}
+                experience = {experience}
             /> 
         )
     })
@@ -28,7 +23,7 @@ export default function App(){
             <Navbar/>
             <Hero/>
             <section className="cards-list">
-                {experiences}
+                {experiencesData}
             </section>
            
             
